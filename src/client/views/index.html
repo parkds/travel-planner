@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trav-AI-ller</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="holder headline">
+      Trav-AI-ller
+    </div>
+
+
+    <div class="holder  travel-date">
+      <label for="travel-date">Step1: When do you want to travel?</label>
+      <div id ="travel-date-range-holder">
+        <input type="text" class="date-picker" id="travel-date" placeholder="Click to choose the Travel Start Date">
+        <input type="text" class="date-picker" id="travel-date-end" placeholder="Click to choose the Travel End Date">
+      </div>
+    </div>
+
+    <div class="holder travel-location">
+      <label for="travel-location-country">Step2: Where do you want to Travel?</label>
+      <div class="travel-location-country-holder">
+        <select id="travel-location-country">
+          <option value="loading">Loading Country Names</option>
+          <!--To be populated by javascript once the list of countries loads-->
+        </select>
+      </div>
+    </div>
+
+    <div class="holder country-info">
+      <div class="title" id="country-info-title"> </div>
+      <br />
+      <div id="entryHolder">
+        <div id="continent"></div>
+        <div id="capital"></div>
+        <div id="population"></div>
+        <div id="currency"></div>
+      </div>
+
+      <br />
+
+      <div class="holder" id="country-picture-holder">
+        <div class="title" id="country-picture-title"></div>
+        <div id="country-picture-holder-display">
+
+        </div>
+      </div>
+      <br />
+
+      <label for="travel-location-country-city">Step3: Select a City!</label>
+      <div class="holder country-city-list">
+        <div class="title" id="country-city-title"> </div>
+        <div class="holder" id="country-city-display-area-holder">
+          <div class="holder" id="country-city-display-area">
+
+
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <label for="travel-location-country-city-info">Step4: Here is the weather information for your travel date and
+        location!</label>
+      <br />
+      <div class="holder city-info">
+        <div class="holder picture" id="city-info">
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="holder entry">
+      <div class="title">Here is your trip information</div>
+      <br />
+      <div id="entryHolder">
+        <div id="date"></div>
+        <div id="country"></div>
+        <div id="city"></div>
+      </div>
+    </div>
+    <div class="holder title">Next Steps...</div>
+    <div class="holder next-steps" id="next-steps">
+      
+      <a href="https://www.google.com/flights">
+        <button class=next-step-buttons id="generate" type="submit"> Choose a Flight </button>
+      </a>
+      <a href="https://www.google.com/travel/hotels"></a>
+        <button class=next-step-buttons id="generate" type="submit"> Choose a Hotel </button>
+      </a>
+
+    </div>
+
+
+  </div>
+
+  </div>
+  <script>
+            
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+    
+</script>
+
+</body>
+
+</html> 

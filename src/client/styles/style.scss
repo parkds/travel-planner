@@ -1,0 +1,169 @@
+/* Import to be used with date picker*/
+@import '~js-datepicker/dist/datepicker.min.css';
+
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: auto;
+    /* grid-template-columns:  */
+    /* height:100vh; */
+    background: #deebf7;
+    color: #0868ac;
+    justify-content: center;
+    grid-gap: 0.5em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry{
+    background: #c6dbef;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#entryHolder{
+
+}
+
+#date{
+
+}
+
+#temp{
+
+}
+
+#content{
+
+}
+
+.headline {
+    height:50px;
+    font-size: 50px;
+}
+.title{
+
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#ffffff;
+    color: black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-color: black;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background: #08519c;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    margin-top:20px;
+}
+
+
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#ffffff;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #969696; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #969696; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #969696; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+
+
+.country-city{
+    width: 400px;
+    height: 50px;
+    background: #08519c;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .country-city:hover{
+    /*For Hover effect*/
+    background:#616161;
+}
+
+.city-info {
+    max-width: 500px;
+}
+
+.next-steps{
+    flex-direction:row;
+    justify-content: center;
+}
+
+.next-step-buttons {
+    margin:10px
+}
+
+.next-step-buttons:hover{
+    /*For Hover effect*/
+    background:#616161;
+}
+
+#travel-date-range-holder {
+    flex-direction:column;
+    justify-content: center;
+}
